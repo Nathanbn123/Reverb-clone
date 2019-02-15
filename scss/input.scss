@@ -18,13 +18,30 @@ $verborange:  #f6870f;
   border: 1px solid red;
 }
 
+
+
+
 .head-banner {
   @include row;
   width: 100%;
   height:auto;
   background-color: $verborange;
   color: white;
+  .shop-head-banner {
+    @include row;
+    justify-content: flex-end;
+  }
 }
+
+.main-header {
+  @include column;
+  .header-nav {
+    @include row;
+    justify-content: space-around;
+  }
+}
+
+
 
 
 
@@ -33,12 +50,16 @@ $verborange:  #f6870f;
   padding: 0 50px;
   width: 1400px;
   .section-container{
-
+    @include row;
+    justify-content: space-around;
   .section-left, .section-right {
     @include column;
   }
   .section-left {
-    float:left;
+
+  }
+  .section-right {
+
   }
 }
 }
