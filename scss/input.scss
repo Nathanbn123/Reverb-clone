@@ -81,7 +81,8 @@ $verborange:  #f6870f;
 }
 
 .actual-nav {
-  margin-left: 27.75%;
+@include row;
+justify-content: center;
 }
 
 
@@ -107,7 +108,8 @@ body {
   padding: 0 50px;
   max-width: 1046.4px;
   .section-container{
-    @include row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     .section-left, .section-right {
       @include column;
@@ -161,20 +163,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .item-show-footer {
 width: 100%;
 background-color: #e4e4e4;
@@ -185,10 +173,9 @@ h2 {
     @include row;
     list-style: none;
     justify-content: space-around;
+
   }
 }
-
-
 
 
 
@@ -217,4 +204,41 @@ a:hover {
   @include row;
   align-items: center;
   }
+}
+
+
+
+@media screen and (max-width: 945px) {
+  .image-footer {
+    overflow: scroll;
+  }
+  .head-banner {
+    @include column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 525px) {
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.item-show-footer ul {
+  overflow: scroll;
+}
+
+
+.info-footer {
+
+flex-direction: column;
+text-align: center;
+}
+
+
+
 }
