@@ -16,11 +16,6 @@ $verborange:  #f6870f;
 
 * {
   border: 1px solid red;
-  font-family:Helvetica,Arial,sans-serif;
-    color: #414141;
-    font-size: 1.6em;
-    line-height: 1.4;
-    -moz-osx-font-smoot
 }
 
 
@@ -42,12 +37,32 @@ $verborange:  #f6870f;
   .header-nav {
     @include row;
     justify-content: space-around;
+    img {
+      height: 3.7rem;
+    }
   }
 }
 
+.actual-nav {
+  margin-left: 27.75%;
+}
 
 
+body {
+  font-family:Helvetica,Arial,sans-serif;
+    color: #414141;
 
+    line-height: 1.4;
+}
+
+.sub-header {
+  @include row;
+  list-style: none;
+  li {
+    padding:5px 15px;
+
+  }
+}
 
 .body-container {
   margin: 0 auto;
@@ -62,27 +77,21 @@ $verborange:  #f6870f;
   .section-left {
     width: 63%;
     .main-image {
-      width: 625px;
-      height: 625px;
+      max-width: 625px;
+      max-height: 625px;
+      height:auto;
     }
 
   }
   .section-right {
-
+    text-align: center;
   }
 }
 }
 
 
 
-.sub-header {
-  @include row;
-  list-style: none;
-  li {
-    padding:5px 15px;
 
-  }
-}
 
 
 
@@ -101,5 +110,10 @@ $verborange:  #f6870f;
 
 
 .item-show-footer {
-  width: 100%;
+width: 100%;
+  ul{
+    @include row;
+    list-style: none;
+    justify-content: space-around;
+  }
 }
