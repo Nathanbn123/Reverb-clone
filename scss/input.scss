@@ -16,6 +16,11 @@ $verborange:  #f6870f;
 
 * {
   border: 1px solid red;
+  font-family:Helvetica,Arial,sans-serif;
+    color: #414141;
+    font-size: 1.6em;
+    line-height: 1.4;
+    -moz-osx-font-smoot
 }
 
 
@@ -27,9 +32,8 @@ $verborange:  #f6870f;
   height:auto;
   background-color: $verborange;
   color: white;
+
   .shop-head-banner {
-    @include row;
-    justify-content: flex-end;
   }
 }
 
@@ -48,7 +52,7 @@ $verborange:  #f6870f;
 .body-container {
   margin: 0 auto;
   padding: 0 50px;
-  width: 1400px;
+  max-width: 1046.4px;
   .section-container{
     @include row;
     justify-content: space-around;
@@ -56,6 +60,11 @@ $verborange:  #f6870f;
     @include column;
   }
   .section-left {
+    width: 63%;
+    .main-image {
+      width: 625px;
+      height: 625px;
+    }
 
   }
   .section-right {
@@ -64,6 +73,16 @@ $verborange:  #f6870f;
 }
 }
 
+
+
+.sub-header {
+  @include row;
+  list-style: none;
+  li {
+    padding:5px 15px;
+
+  }
+}
 
 
 
