@@ -1,0 +1,65 @@
+$verborange:  #f6870f;
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+* {
+  border: 1px solid red;
+}
+
+.head-banner {
+  @include row;
+  width: 100%;
+  height:auto;
+  background-color: $verborange;
+  color: white;
+}
+
+
+
+.body-container {
+  margin: 0 auto;
+  padding: 0 50px;
+  width: 1400px;
+  .section-container{
+
+  .section-left, .section-right {
+    @include column;
+  }
+  .section-left {
+    float:left;
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item-show-footer {
+  width: 100%;
+}
