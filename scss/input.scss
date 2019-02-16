@@ -30,7 +30,7 @@ $verborange:  #f6870f;
 
 
 * {
-  border: 1px solid red;
+  // border: 1px solid red;
   a {
     text-decoration: none;
     color: #414141;
@@ -50,6 +50,7 @@ $verborange:  #f6870f;
   height:auto;
   background-color: $verborange;
   color: white;
+  margin-bottom: 15px;
 
   .shop-head-banner {
   }
@@ -62,6 +63,10 @@ $verborange:  #f6870f;
     @include row;
     justify-content: space-around;
     align-items: center;
+    .hidden-icons {
+      visibility: hidden;
+      font-size: 32px;
+    }
     input {
       width: 35%;
       height: 55%;
@@ -82,7 +87,8 @@ $verborange:  #f6870f;
 
 .actual-nav {
 @include row;
-justify-content: center;
+justify-content: space-around;
+
 }
 
 
@@ -126,6 +132,10 @@ body {
       .image-footer {
         @include row;
         justify-content: space-around;
+        img {
+          width: 48px;
+          height: 48px;
+        }
 
       }
 
@@ -177,6 +187,17 @@ h2 {
   }
 }
 
+.similar-product {
+  img {
+    max-width: 245px;
+  }
+}
+
+.article-row ul img{
+  max-width: 432px;
+  max-height: 130px;
+
+}
 
 
 
@@ -209,6 +230,16 @@ a:hover {
 
 
 @media screen and (max-width: 945px) {
+    .header-icons {
+      display: none;
+    }
+    .actual-nav ul a {
+      visibility: hidden;
+    }
+    .hidden-icons {
+     visibility: visible;
+    }
+
   .image-footer {
     overflow: scroll;
   }
@@ -216,16 +247,20 @@ a:hover {
     @include column;
     align-items: center;
     justify-content: center;
+    height: 55px;
   }
 }
 
+@media screen and (max-width: 944px){
+#sell {
+  visibility: visible;
+}
+}
 
-@media screen and (max-width: 525px) {
-  .section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 575px) {
+  .body-container {
+    display: block;
+      width : 100%;
   }
 
 .item-show-footer ul {
