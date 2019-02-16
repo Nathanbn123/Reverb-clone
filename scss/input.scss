@@ -45,7 +45,7 @@ $verborange:  #f6870f;
 
 .head-banner {
   @include row;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   height:auto;
   background-color: $verborange;

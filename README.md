@@ -1,22 +1,19 @@
-# _Pizza site_
+# _Reverb Clone!_
 
-#### _A website where you can order some pizza!, 2/1/19_
+#### _A website where you can critique my css skills!, 2/15/19_
 
 #### By _**Nathan Nielson**_
 
 ## Description
 
-_This application provides the user with the oppurtunity to order some delicious pizza!_ 
+_This application provides the user with the oppurtunity to see a recreation of a popular music grear trading site!_ 
 
 ## Specs
 
-Specification | Input | Output
-------------- | ----- | ------
-The program will take radio inputs from the user and display the number of corresponding toppings with a total value after submission. | Olives, Extra cheese | Thank you for your order! Your small , 2 topping pizza is on the way! It will cost $3.60 
-The program will take selection input from the user and display the corresponding size with a total value.| Medium | Thank you for your order! Your medium , 2 topping pizza is on the way! It will cost $4.60
+*_This program is an attempted recreation of a website called Reverb.com_
 
 
-
+![image of original site](img/readme-site-image.jpg)   ![image of my clone](readme-clone-image)
  
 
 ## Setup/Installation Requirements
@@ -27,7 +24,9 @@ The program will take selection input from the user and display the correspondin
 
 ## Known Bugs
 
-_there are currently no known bugs._
+1. Hidden icons do not redisplay when site is adjust to corresponding size.
+2. main columns do not break down and stack at corresponding size.
+3. several broken/missing images.
 
 ## Support and contact details
 _If you encounter any bugs or issues not documented during your experience, please feel free to contact me at my email: nathans-email@email.com_
