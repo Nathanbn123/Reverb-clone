@@ -12,8 +12,11 @@ _This application provides the user with the oppurtunity to see a recreation of 
 
 *_This program is an attempted recreation of a website called Reverb.com_
 
+## An image of the original site!
+![image of original site](img/readme-site-image.jpg)   
 
-![image of original site](img/readme-site-image.jpg)   ![image of my clone](readme-clone-image)
+## An image of my clone!
+![image of my clone](img/readme-clone-image.jpg)
  
 
 ## Setup/Installation Requirements
