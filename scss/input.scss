@@ -63,6 +63,9 @@ $verborange:  #f6870f;
     @include row;
     justify-content: space-around;
     align-items: center;
+    .header-icons a {
+      padding-right: 15px;
+    }
     .hidden-icons {
       visibility: hidden;
       font-size: 32px;
@@ -143,7 +146,9 @@ body {
     .section-right {
       width: 37%;
       text-align: center;
-
+      div {
+        padding-bottom: 15px;
+      }
     }
   }
 }
