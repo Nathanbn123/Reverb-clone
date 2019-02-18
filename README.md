@@ -10,7 +10,7 @@ _This application provides the user with the oppurtunity to see a recreation of 
 
 ## Specs
 
-*_This program is an attempted recreation of a website called Reverb.com_
+*_This program is an attempted recreation of a website called Reverb.com, specifically this page : https://reverb.com/item/19336732-kiesel-aries-7-a7h-7-string-guitar-trans-aqua-burst-swamp-ash-w-bag#description-tab
 
 ## An image of the original site!
 ![image of original site](img/readme-site-image.jpg)   
